@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import missingno as msno
 from sklearn.preprocessing import LabelEncoder
 
-df_exp = pd.read_csv(r"C:\Users\coys7\Apartments_prices\final_2.csv")
+df_exp = pd.read_csv(r"C:\Users\coys7\Apartments_prices\data\final_2.csv")
 
 df_exp.drop(df_exp[df_exp['prices'] >= 300000000].index,inplace=True)
 df_exp.drop(df_exp[df_exp['Square_in_m^2'] >= 250].index,inplace=True)

@@ -3,8 +3,8 @@ import re
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
-df_first_page = pd.read_csv(r"C:\Users\coys7\Apartments_prices\app-s_first_page")
-df_other_pages = pd.read_csv(r"C:\Users\coys7\Apartments_prices\app-s_other_pages")
+df_first_page = pd.read_csv(r"C:\Users\coys7\Apartments_prices\data\app-s_first_page")
+df_other_pages = pd.read_csv(r"C:\Users\coys7\Apartments_prices\data\app-s_other_pages")
 df_merged = pd.concat([df_other_pages,df_first_page])
 
 
@@ -66,7 +66,7 @@ df_merged.to_csv('final_1.csv', index=False)
 
 
 
-df_final = pd.read_csv(r"C:\Users\coys7\Apartments_prices\final_1.csv")
+df_final = pd.read_csv(r"C:\Users\coys7\Apartments_prices\data\final_1.csv")
 
 df_final = df_final.dropna(axis=0)
 
